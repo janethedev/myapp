@@ -1,10 +1,16 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/game/game",
+    "pages/result/result",
+    "pages/settings/settings",
+    "pages/rules/rules"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#FF6B6B",
+    "navigationBarTitleText": "疯狂猜词",
+    "navigationStyle": "default"
   },
   "style": "v2",
   "renderer": "skyline",

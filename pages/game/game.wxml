@@ -1,0 +1,15 @@
+<!--game.wxml-->
+<view class="container">
+  <view class="timer">{{timeLeft}}s</view>
+  <view class="word">{{currentWord}}</view>
+  <view class="score">得分: {{score}}</view>
+  <view class="action-area">
+    <view class="left-area" bindtap="correctAnswer">
+      <text class="action-text">正确 ✓</text>
+    </view>
+    <view class="right-area" bindtap="skipAnswer">
+      <text class="action-text">跳过 ✗</text>
+    </view>
+  </view>
+  <button class="pause-btn" bindtap="pauseGame">暂停</button>
+</view>

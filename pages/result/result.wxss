@@ -1,0 +1,93 @@
+/**result.wxss**/
+page {
+  height: 100vh;
+  background: #E8F5E8;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40rpx;
+}
+
+.score-display {
+  font-size: 120rpx;
+  font-weight: bold;
+  color: #FFD700;
+  margin-bottom: 20rpx;
+  text-shadow: 2rpx 2rpx 4rpx rgba(0,0,0,0.3);
+}
+
+.score-label {
+  font-size: 32rpx;
+  color: #666;
+  margin-bottom: 80rpx;
+}
+
+.stats {
+  width: 100%;
+  margin-bottom: 80rpx;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 15rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+}
+
+.stat-label {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.stat-value {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.restart-btn {
+  width: 100%;
+  height: 100rpx;
+  background: linear-gradient(45deg, #4CAF50, #45a049);
+  color: white;
+  font-size: 36rpx;
+  font-weight: bold;
+  border-radius: 50rpx;
+  border: none;
+}
+
+.home-btn {
+  width: 100%;
+  height: 80rpx;
+  background: #FF6B6B;
+  color: white;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+  border: none;
+}
+
+.share-btn {
+  width: 100%;
+  height: 80rpx;
+  background: #2196F3;
+  color: white;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+  border: none;
+}

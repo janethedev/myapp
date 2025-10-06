@@ -1,0 +1,75 @@
+/**settings.wxss**/
+page {
+  height: 100vh;
+  background: #F5F5F5;
+}
+
+.container {
+  padding: 40rpx;
+}
+
+.setting-group {
+  background: white;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+}
+
+.setting-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30rpx;
+}
+
+.setting-options {
+  display: flex;
+  gap: 20rpx;
+}
+
+.option {
+  flex: 1;
+  height: 80rpx;
+  background: #F0F0F0;
+  color: #666;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40rpx;
+  transition: all 0.3s;
+}
+
+.option.active {
+  background: #4CAF50;
+  color: white;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+}
+
+.setting-label {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.back-btn {
+  width: 100%;
+  height: 80rpx;
+  background: #FF6B6B;
+  color: white;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+  border: none;
+  margin-top: 40rpx;
+}

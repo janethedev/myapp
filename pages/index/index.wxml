@@ -1,7 +1,8 @@
 <!--index.wxml-->
-<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    Weixin
-  </view>
-</scroll-view>
+<view class="container">
+  <view class="title">疯狂猜词</view>
+  <view class="high-score">最高分: {{highScore}}</view>
+  <button class="start-btn" bindtap="startGame">开始游戏</button>
+  <button class="rules-btn" bindtap="goToRules">游戏规则</button>
+  <button class="settings-btn" bindtap="goToSettings">设置</button>
+</view>

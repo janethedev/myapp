@@ -1,0 +1,45 @@
+<!--rules.wxml-->
+<scroll-view class="container" scroll-y>
+  <view class="content">
+    <view class="title">游戏规则</view>
+    
+    <view class="rule-section">
+      <view class="section-title">🎯 游戏目标</view>
+      <view class="rule-text">在规定时间内猜对尽可能多的词语，获得更高分数！</view>
+    </view>
+
+    <view class="rule-section">
+      <view class="section-title">👥 游戏人数</view>
+      <view class="rule-text">至少2人，一人持设备，其他人负责描述词语</view>
+    </view>
+
+    <view class="rule-section">
+      <view class="section-title">🎮 游戏玩法</view>
+      <view class="rule-text">1. 持设备者看不到屏幕上的词语</view>
+      <view class="rule-text">2. 其他人通过语言或肢体动作描述词语</view>
+      <view class="rule-text">3. 持设备者根据描述猜测词语</view>
+      <view class="rule-text">4. 猜对点击左侧绿色区域，放弃点击右侧红色区域</view>
+    </view>
+
+    <view class="rule-section">
+      <view class="section-title">⏰ 时间限制</view>
+      <view class="rule-text">每轮游戏有时间限制，可在设置中调整（30秒/60秒/90秒）</view>
+    </view>
+
+    <view class="rule-section">
+      <view class="section-title">🏆 计分规则</view>
+      <view class="rule-text">• 猜对1个词语：+10分</view>
+      <view class="rule-text">• 跳过词语：+0分</view>
+      <view class="rule-text">• 时间结束自动结束游戏</view>
+    </view>
+
+    <view class="rule-section">
+      <view class="section-title">💡 游戏技巧</view>
+      <view class="rule-text">• 描述时避免直接说出词语</view>
+      <view class="rule-text">• 可以用同义词、反义词、特征描述</view>
+      <view class="rule-text">• 肢体动作和表情可以增加趣味性</view>
+    </view>
+
+    <button class="back-btn" bindtap="goBack">返回</button>
+  </view>
+</scroll-view>

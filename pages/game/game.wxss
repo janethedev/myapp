@@ -1,0 +1,91 @@
+/**game.wxss**/
+page {
+  height: 100vh;
+  background: #F8F9FA;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.timer {
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #F44336;
+  z-index: 10;
+}
+
+.word {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin: 40rpx;
+  border-radius: 20rpx;
+  font-size: 60rpx;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 40rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0,0,0,0.1);
+}
+
+.score {
+  position: absolute;
+  bottom: 200rpx;
+  left: 40rpx;
+  font-size: 32rpx;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.action-area {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200rpx;
+  display: flex;
+}
+
+.left-area {
+  flex: 1;
+  background: #4CAF50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-area {
+  flex: 1;
+  background: #F44336;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-text {
+  color: white;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.pause-btn {
+  position: absolute;
+  top: 40rpx;
+  left: 40rpx;
+  width: 120rpx;
+  height: 60rpx;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 24rpx;
+  border-radius: 30rpx;
+  border: none;
+}

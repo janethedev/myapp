@@ -1,0 +1,33 @@
+<!--settings.wxml-->
+<view class="container">
+  <view class="setting-group">
+    <view class="setting-title">游戏时长</view>
+    <view class="setting-options">
+      <view class="option {{gameTime === 30 ? 'active' : ''}}" bindtap="setGameTime" data-time="30">30秒</view>
+      <view class="option {{gameTime === 60 ? 'active' : ''}}" bindtap="setGameTime" data-time="60">60秒</view>
+      <view class="option {{gameTime === 90 ? 'active' : ''}}" bindtap="setGameTime" data-time="90">90秒</view>
+    </view>
+  </view>
+
+  <view class="setting-group">
+    <view class="setting-title">词语难度</view>
+    <view class="setting-options">
+      <view class="option {{difficulty === 'easy' ? 'active' : ''}}" bindtap="setDifficulty" data-difficulty="easy">简单</view>
+      <view class="option {{difficulty === 'medium' ? 'active' : ''}}" bindtap="setDifficulty" data-difficulty="medium">中等</view>
+      <view class="option {{difficulty === 'hard' ? 'active' : ''}}" bindtap="setDifficulty" data-difficulty="hard">困难</view>
+    </view>
+  </view>
+
+  <view class="setting-group">
+    <view class="setting-item">
+      <text class="setting-label">音效</text>
+      <switch checked="{{soundEnabled}}" bindchange="toggleSound" color="#4CAF50"/>
+    </view>
+    <view class="setting-item">
+      <text class="setting-label">震动反馈</text>
+      <switch checked="{{vibrationEnabled}}" bindchange="toggleVibration" color="#4CAF50"/>
+    </view>
+  </view>
+
+  <button class="back-btn" bindtap="goBack">返回</button>
+</view>
