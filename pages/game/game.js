@@ -8,6 +8,16 @@ const words = [
   '手机', '电脑', '电视', '冰箱', '洗衣机'
 ];
 
+// 打乱数组的Fisher-Yates洗牌算法
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 Page({
   data: {
     currentWord: '',
@@ -15,7 +25,8 @@ Page({
     score: 0,
     gameTimer: null,
     wordIndex: 0,
-    isPaused: false
+    isPaused: false,
+    shuffledWords: []
   },
 
   onLoad() {
@@ -34,12 +45,14 @@ Page({
 
   startGame() {
     const gameTime = this.data.gameTime || 60;
+    const shuffledWords = shuffleArray(words);
     this.setData({
-      currentWord: words[0],
+      currentWord: shuffledWords[0],
       timeLeft: gameTime,
       score: 0,
       wordIndex: 0,
-      isPaused: false
+      isPaused: false,
+      shuffledWords: shuffledWords
     });
     this.startTimer();
   },
@@ -78,10 +91,10 @@ Page({
   },
 
   nextWord() {
-    const nextIndex = (this.data.wordIndex + 1) % words.length;
+    const nextIndex = (this.data.wordIndex + 1) % this.data.shuffledWords.length;
     this.setData({
       wordIndex: nextIndex,
-      currentWord: words[nextIndex]
+      currentWord: this.data.shuffledWords[nextIndex]
     });
   },
 
